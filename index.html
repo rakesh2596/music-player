@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+        <h1>Spotify <i class="fab fa-spotify"></i></h1>
+        <div class="music-container" id="music-container">
+      <div class="music-info">
+        <h4 id="title"></h4>  <!-- dynamic title when song switched -->
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <audio  src="music/Baarish.mp3" id="audio"></audio>
+
+      <div class="img-container">
+        <img src="images/Baarish.jpg" alt="music-cover" id="cover" />
+      </div>
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fa fa-step-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fa fa-play-circle"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fa fa-step-forward"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
